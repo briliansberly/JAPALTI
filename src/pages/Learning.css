@@ -1,0 +1,460 @@
+.learning-page {
+  min-height: 100vh;
+  background: #f6f7f9;
+  color: #1f2937;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.learning-page * {
+  box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.learning-header {
+  max-width: 1100px;
+  margin: 0 auto 35px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.learning-label {
+  display: inline-block;
+
+  color: #c62828;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.learning-header h1 {
+  margin: 8px 0;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.learning-header p {
+  margin: 0;
+  color: #777;
+  font-size: 15px;
+}
+
+.back-button {
+  flex-shrink: 0;
+
+  padding: 12px 18px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: white;
+  color: #1f2937;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.back-button:hover {
+  border-color: #c62828;
+  color: #c62828;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.learning-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+   OVERALL PROGRESS
+========================= */
+
+.overall-card {
+  background: white;
+
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+
+  padding: 28px;
+
+  margin-bottom: 35px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+}
+
+.overall-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 30px;
+
+  margin-bottom: 20px;
+}
+
+.overall-label {
+  display: inline-block;
+
+  color: #c62828;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.overall-top h2 {
+  margin: 7px 0;
+
+  font-size: 22px;
+}
+
+.overall-top p {
+  margin: 0;
+
+  color: #777;
+  font-size: 14px;
+}
+
+.overall-top > strong {
+  font-size: 30px;
+  color: #c62828;
+}
+
+.overall-progress {
+  width: 100%;
+  height: 10px;
+
+  background: #eeeeee;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.overall-progress > div {
+  height: 100%;
+
+  background: #c62828;
+
+  border-radius: 20px;
+
+  transition: width 0.4s ease;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.materials-section {
+  padding-bottom: 30px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin: 6px 0 0;
+
+  font-size: 24px;
+}
+
+.material-count {
+  color: #777;
+  font-size: 13px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.learning-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+/* =========================
+   MATERIAL CARD
+========================= */
+
+.material-card {
+  background: white;
+
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+
+  padding: 24px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.material-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d9b0b0;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   CARD TOP
+========================= */
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.material-icon {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: #fff1f1;
+  color: #c62828;
+
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.material-status {
+  padding: 6px 9px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* STATUS */
+
+.material-status.completed {
+  background: #edf8f0;
+  color: #2e7d32;
+}
+
+.material-status.learning {
+  background: #fff7e6;
+  color: #a86600;
+}
+
+.material-status.not-started {
+  background: #f1f2f4;
+  color: #777;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.material-card h2 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+}
+
+.material-card p {
+  min-height: 42px;
+
+  margin: 0 0 20px;
+
+  color: #777;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  font-size: 12px;
+}
+
+.progress-info span {
+  color: #999;
+}
+
+.progress-info strong {
+  color: #333;
+}
+
+.material-progress-bar {
+  width: 100%;
+  height: 7px;
+
+  background: #eeeeee;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.material-progress-fill {
+  height: 100%;
+
+  background: #c62828;
+
+  border-radius: 20px;
+
+  transition: width 0.4s ease;
+}
+
+/* =========================
+   CARD BOTTOM
+========================= */
+
+.material-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 15px;
+
+  font-size: 12px;
+}
+
+.material-bottom span {
+  color: #999;
+}
+
+.material-bottom strong {
+  color: #c62828;
+  white-space: nowrap;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .learning-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .learning-page {
+    padding: 20px;
+  }
+
+  .learning-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .learning-header h1 {
+    font-size: 27px;
+  }
+
+  .back-button {
+    width: 100%;
+  }
+
+  .overall-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .overall-top > strong {
+    font-size: 25px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+html.dark-mode .learning-page {
+  background: #11151c !important;
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .learning-header h1,
+html.dark-mode .overall-top h2,
+html.dark-mode .section-heading h2,
+html.dark-mode .material-card h2 {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .learning-header p,
+html.dark-mode .overall-top p,
+html.dark-mode .material-card p,
+html.dark-mode .material-count,
+html.dark-mode .material-bottom span,
+html.dark-mode .progress-info span {
+  color: #929baa !important;
+}
+
+html.dark-mode .overall-card,
+html.dark-mode .material-card {
+  background: #181d25 !important;
+  border-color: #292f39 !important;
+  box-shadow: none !important;
+}
+
+html.dark-mode .overall-progress,
+html.dark-mode .material-progress-bar {
+  background: #303640 !important;
+}
+
+html.dark-mode .back-button {
+  background: #f0f2f5 !important;
+  color: #172033 !important;
+  border-color: #f0f2f5 !important;
+}

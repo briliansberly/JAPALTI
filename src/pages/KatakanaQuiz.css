@@ -1,0 +1,311 @@
+.katakana-quiz-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f6f7f9;
+  padding: 40px;
+  color: #1f2937;
+  box-sizing: border-box;
+}
+
+.katakana-quiz-page * {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.katakana-quiz-page .quiz-header {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.katakana-quiz-page .quiz-header h1 {
+  margin: 6px 0;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.katakana-quiz-page .section-label {
+  display: block;
+  color: #c62828;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.katakana-quiz-page .quiz-xp {
+  background: white;
+  border: 1px solid #eee;
+  padding: 11px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* CONTAINER */
+
+.katakana-quiz-page .quiz-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 35px auto 0;
+}
+
+/* PROGRESS */
+
+.katakana-progress {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.katakana-progress-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.katakana-progress-track {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.katakana-progress-fill {
+  height: 100%;
+  background: #c62828;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* QUESTION CARD */
+
+.katakana-quiz-page .question-card {
+  width: 100%;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  padding: 45px 40px 40px;
+  text-align: center;
+}
+
+.katakana-quiz-page .question-label {
+  margin: 0;
+  color: #888;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.katakana-quiz-page .question-kana {
+  margin: 30px 0 45px;
+  font-size: 100px;
+  line-height: 1;
+  font-weight: bold;
+  color: #c62828;
+}
+
+/* OPTIONS */
+
+.katakana-quiz-page .options {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.katakana-quiz-page .option-button {
+  width: 100%;
+  min-height: 58px;
+  padding: 16px;
+  background: white;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #1f2937;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.katakana-quiz-page .option-button:hover {
+  border-color: #c62828;
+}
+
+.katakana-quiz-page .option-button.correct {
+  border-color: #2e7d32;
+  background: #edf7ee;
+}
+
+.katakana-quiz-page .option-button.wrong {
+  border-color: #c62828;
+  background: #fff0f0;
+}
+
+/* FEEDBACK */
+
+.katakana-quiz-page .answer-feedback {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f7f7f7;
+  line-height: 1.5;
+}
+
+.katakana-quiz-page .answer-feedback strong,
+.katakana-quiz-page .answer-feedback span {
+  display: block;
+}
+
+.katakana-quiz-page .answer-feedback strong {
+  margin-bottom: 4px;
+}
+
+.katakana-quiz-page .answer-feedback span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* NEXT BUTTON */
+
+.katakana-quiz-page .next-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #c62828;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.katakana-quiz-page .next-button:hover {
+  background: #a91f1f;
+}
+
+/* RESULT */
+
+.katakana-quiz-page .result-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  padding: 45px;
+  text-align: center;
+}
+
+.katakana-quiz-page .result-icon {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.katakana-quiz-page .result-card h1 {
+  margin: 8px 0;
+}
+
+.katakana-quiz-page .result-card p {
+  color: #888;
+}
+
+.katakana-quiz-page .final-score {
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+.katakana-quiz-page .final-score span,
+.katakana-quiz-page .final-score strong {
+  display: block;
+}
+
+.katakana-quiz-page .final-score span {
+  color: #888;
+  font-size: 12px;
+}
+
+.katakana-quiz-page .final-score strong {
+  color: #c62828;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.katakana-quiz-page .result-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.katakana-quiz-page .result-actions button {
+  flex: 1;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: #c62828;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.katakana-quiz-page .result-actions button:last-child {
+  background: #1f2937;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .katakana-quiz-page {
+    padding: 20px;
+  }
+
+  .katakana-quiz-page .quiz-header {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .katakana-quiz-page .quiz-header h1 {
+    font-size: 23px;
+  }
+
+  .katakana-quiz-page .quiz-xp {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+
+  .katakana-quiz-page .quiz-container {
+    margin-top: 25px;
+  }
+
+  .katakana-quiz-page .question-card {
+    padding: 30px 20px;
+  }
+
+  .katakana-quiz-page .question-kana {
+    font-size: 80px;
+    margin: 25px 0 35px;
+  }
+
+  .katakana-quiz-page .options {
+    grid-template-columns: 1fr;
+  }
+
+  .katakana-quiz-page .result-card {
+    margin: 50px auto;
+    padding: 30px 20px;
+  }
+
+  .katakana-quiz-page .result-actions {
+    flex-direction: column;
+  }
+}

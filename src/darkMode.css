@@ -1,0 +1,719 @@
+/* ========================================
+   JAPALTI DARK MODE
+======================================== */
+
+html.dark-mode,
+body.dark-mode {
+  background: #11151c !important;
+  color: #e8ebf0;
+}
+
+html.dark-mode #root {
+  background: #11151c !important;
+}
+
+/* ========================================
+   DASHBOARD
+======================================== */
+
+body.dark-mode .dashboard-page {
+  background: #11151c !important;
+  color: #e8ebf0;
+}
+
+body.dark-mode .dashboard-main {
+  background: #11151c !important;
+}
+
+body.dark-mode .sidebar {
+  background: #181d25;
+  border-color: #292f39;
+}
+
+body.dark-mode .brand h2,
+body.dark-mode .brand span,
+body.dark-mode .sidebar-menu a,
+body.dark-mode .sidebar-bottom a {
+  color: #e8ebf0;
+}
+
+body.dark-mode .sidebar-menu a:hover,
+body.dark-mode .sidebar-bottom a:hover {
+  background: #242b34;
+  color: #ffffff;
+}
+
+body.dark-mode .sidebar-menu a.active {
+  background: #3a2024;
+  color: #ff5a5a;
+}
+
+body.dark-mode .topbar h1,
+body.dark-mode .topbar strong,
+body.dark-mode .stat-card h2,
+body.dark-mode .panel h2,
+body.dark-mode .learning-info h3,
+body.dark-mode .lesson-card h3,
+body.dark-mode .quest-item strong {
+  color: #f4f6f8;
+}
+
+body.dark-mode .welcome-small,
+body.dark-mode .stat-card span,
+body.dark-mode .learning-info p,
+body.dark-mode .learning-info > span,
+body.dark-mode .lesson-card p,
+body.dark-mode .lesson-card > span,
+body.dark-mode .quest-item p {
+  color: #929baa;
+}
+
+body.dark-mode .stat-card,
+body.dark-mode .panel,
+body.dark-mode .learning-card,
+body.dark-mode .lesson-card {
+  background: #181d25;
+  border-color: #292f39;
+  box-shadow: none;
+}
+
+body.dark-mode .quest-item {
+  border-color: #292f39;
+}
+
+body.dark-mode .progress-bar {
+  background: #303640;
+}
+
+/* ========================================
+   LEARNING
+======================================== */
+
+body.dark-mode .learning-page {
+  background: #11151c !important;
+  color: #e8ebf0;
+}
+
+body.dark-mode .learning-header h1,
+body.dark-mode .section-heading h2,
+body.dark-mode .overall-top h2,
+body.dark-mode .material-card h2 {
+  color: #f4f6f8;
+}
+
+body.dark-mode .learning-header p,
+body.dark-mode .overall-top p,
+body.dark-mode .material-card p,
+body.dark-mode .progress-info span,
+body.dark-mode .material-bottom span,
+body.dark-mode .material-count {
+  color: #929baa;
+}
+
+body.dark-mode .overall-card,
+body.dark-mode .material-card {
+  background: #181d25;
+  border-color: #292f39;
+  box-shadow: none;
+}
+
+body.dark-mode .material-card:hover {
+  background: #1d232c;
+  border-color: #3b424d;
+  box-shadow: none;
+}
+
+body.dark-mode .material-icon {
+  background: #2a2022;
+  color: #ff4b4b;
+}
+
+body.dark-mode .material-progress-bar,
+body.dark-mode .overall-progress {
+  background: #303640;
+}
+
+body.dark-mode .material-progress-fill,
+body.dark-mode .overall-progress > div {
+  background: #e60000;
+}
+
+body.dark-mode .progress-info strong {
+  color: #f4f6f8;
+}
+
+body.dark-mode .material-bottom strong {
+  color: #ff4b4b;
+}
+
+body.dark-mode .material-status.completed {
+  background: #193225;
+  color: #63c77d;
+}
+
+body.dark-mode .material-status.learning {
+  background: #332b1b;
+  color: #e0a84d;
+}
+
+body.dark-mode .material-status.not-started {
+  background: #292f39;
+  color: #929baa;
+}
+
+body.dark-mode .back-button {
+  background: #f0f2f5;
+  color: #172033;
+  border-color: #f0f2f5;
+}
+
+/* ========================================
+   QUIZ HUB
+======================================== */
+
+body.dark-mode .quiz-hub-page {
+  background: #11151c !important;
+  color: #e8ebf0;
+}
+
+body.dark-mode .quiz-hub-header h1,
+body.dark-mode .quiz-section-heading h2,
+body.dark-mode .quiz-card h2 {
+  color: #f4f6f8;
+}
+
+body.dark-mode .quiz-hub-header p,
+body.dark-mode .quiz-card p,
+body.dark-mode .quiz-card-progress span {
+  color: #929baa;
+}
+
+body.dark-mode .quiz-summary > div,
+body.dark-mode .quiz-card {
+  background: #181d25;
+  border-color: #292f39;
+  box-shadow: none;
+}
+
+body.dark-mode .quiz-card:hover {
+  background: #1d232c;
+  border-color: #3b424d;
+  box-shadow: none;
+}
+
+body.dark-mode .quiz-summary span {
+  color: #929baa;
+}
+
+body.dark-mode .quiz-summary strong,
+body.dark-mode .quiz-card-progress strong {
+  color: #f4f6f8;
+}
+
+body.dark-mode .quiz-icon {
+  background: #2a2022;
+  color: #ff4b4b;
+}
+
+body.dark-mode .quiz-completed {
+  background: #193225;
+  color: #63c77d;
+}
+
+body.dark-mode .quiz-progress-track {
+  background: #303640;
+}
+
+body.dark-mode .quiz-progress-track > div {
+  background: #e60000;
+}
+
+body.dark-mode .quiz-back-button {
+  background: #f0f2f5;
+  color: #172033;
+  border-color: #f0f2f5;
+}
+
+body.dark-mode .quiz-card button {
+  background: #e60000;
+  color: #ffffff;
+}
+
+body.dark-mode .quiz-card button:hover {
+  background: #b91c1c;
+}
+
+/* ========================================
+   REVIEW
+======================================== */
+
+body.dark-mode .review-page {
+  background: #11151c !important;
+  color: #e8ebf0;
+}
+
+body.dark-mode .review-header {
+  background: #181d25;
+  border-color: #292f39;
+}
+
+body.dark-mode .review-header h1,
+body.dark-mode .review-section-header h2,
+body.dark-mode .review-card h3 {
+  color: #f4f6f8;
+}
+
+body.dark-mode .review-header p,
+body.dark-mode .review-card p,
+body.dark-mode .review-progress-info,
+body.dark-mode .review-overview p {
+  color: #929baa;
+}
+
+body.dark-mode .review-overview,
+body.dark-mode .review-card {
+  background: #181d25;
+  border-color: #292f39;
+  box-shadow: none;
+}
+
+body.dark-mode .review-material-button {
+  background: #292f39;
+  color: #f0f2f5;
+}
+
+body.dark-mode .review-tip {
+  background: #211f18;
+  border-color: #3a3525;
+}
+
+/* ========================================
+   DAILY QUEST
+======================================== */
+
+body.dark-mode .daily-quest-page {
+  background: #11151c !important;
+  color: #e8ebf0;
+}
+
+body.dark-mode .daily-quest-header {
+  background: #181d25;
+  border-color: #292f39;
+}
+
+body.dark-mode .daily-quest-header h1,
+body.dark-mode .overview-left h2,
+body.dark-mode .section-heading h2,
+body.dark-mode .quest-card-content h3 {
+  color: #f4f6f8;
+}
+
+body.dark-mode .daily-quest-header p,
+body.dark-mode .overview-left p,
+body.dark-mode .quest-card-content p {
+  color: #929baa;
+}
+
+body.dark-mode .daily-overview,
+body.dark-mode .daily-quest-card {
+  background: #181d25;
+  border-color: #292f39;
+  box-shadow: none;
+}
+
+body.dark-mode .quest-progress-bar {
+  background: #303640;
+}
+
+body.dark-mode .quest-action {
+  background: #e7eaee;
+  color: #171b22;
+}
+
+body.dark-mode .quest-action:hover {
+  background: #c62828;
+  color: #ffffff;
+}
+
+body.dark-mode .daily-quest-tip {
+  background: #211f18;
+  border-color: #3a3525;
+}
+
+/* ========================================
+   SETTINGS
+======================================== */
+
+body.dark-mode .settings-page {
+  background: #11151c !important;
+  color: #e8ebf0;
+}
+
+body.dark-mode .settings-header {
+  background: #181d25;
+  border-color: #292f39;
+}
+
+body.dark-mode .settings-header h1,
+body.dark-mode .settings-section-title h2,
+body.dark-mode .settings-option strong {
+  color: #f4f6f8;
+}
+
+body.dark-mode .settings-header p,
+body.dark-mode .settings-option p,
+body.dark-mode .settings-field small {
+  color: #929baa;
+}
+
+body.dark-mode .settings-card {
+  background: #181d25;
+  border-color: #292f39;
+  box-shadow: none;
+}
+
+body.dark-mode .settings-field input,
+body.dark-mode .settings-option select {
+  background: #11151c;
+  border-color: #343b46;
+  color: #f0f2f5;
+}
+
+body.dark-mode .settings-field input::placeholder {
+  color: #6f7784;
+}
+
+body.dark-mode .settings-divider {
+  background: #292f39;
+}
+
+body.dark-mode .settings-back-button {
+  color: #929baa;
+}
+
+body.dark-mode .settings-back-button:hover {
+  color: #ffffff;
+}
+
+/* ========================================
+   GLOBAL
+======================================== */
+
+body.dark-mode button {
+  transition: 0.2s ease;
+}
+
+/* =========================================
+   DARK MODE - MATERIAL PAGES
+   ========================================= */
+
+html.dark-mode .hiragana-page,
+body.dark-mode .hiragana-page,
+html.dark-mode .katakana-page,
+body.dark-mode .katakana-page,
+html.dark-mode .kanji-page,
+body.dark-mode .kanji-page,
+html.dark-mode .vocabulary-page,
+body.dark-mode .vocabulary-page,
+html.dark-mode .grammar-page,
+body.dark-mode .grammar-page {
+  background: #11151c !important;
+  color: #f4f6f8 !important;
+}
+
+/* HEADER & TEXT */
+
+html.dark-mode .hiragana-page h1,
+html.dark-mode .hiragana-page h2,
+html.dark-mode .hiragana-page h3,
+html.dark-mode .katakana-page h1,
+html.dark-mode .katakana-page h2,
+html.dark-mode .katakana-page h3,
+html.dark-mode .kanji-page h1,
+html.dark-mode .kanji-page h2,
+html.dark-mode .kanji-page h3,
+html.dark-mode .vocabulary-page h1,
+html.dark-mode .vocabulary-page h2,
+html.dark-mode .vocabulary-page h3,
+html.dark-mode .grammar-page h1,
+html.dark-mode .grammar-page h2,
+html.dark-mode .grammar-page h3 {
+  color: #f4f6f8 !important;
+}
+
+/* BUTTON KEMBALI */
+
+html.dark-mode .hiragana-page .back-button,
+html.dark-mode .katakana-page .back-button,
+html.dark-mode .kanji-page .back-button,
+html.dark-mode .vocabulary-page .back-button,
+html.dark-mode .grammar-page .grammar-back {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+  border-color: #343b47 !important;
+}
+
+/* KARTU PUTIH */
+
+html.dark-mode .hiragana-page .selected-kana,
+html.dark-mode .hiragana-page .kana-panel,
+html.dark-mode .katakana-page .selected-kana,
+html.dark-mode .katakana-page .kana-panel,
+html.dark-mode .kanji-page .kanji-info,
+html.dark-mode .kanji-page .kanji-grid,
+html.dark-mode .kanji-page .kanji-card,
+html.dark-mode .kanji-page .kanji-detail,
+html.dark-mode .vocabulary-page .search-box,
+html.dark-mode .vocabulary-page .category,
+html.dark-mode .vocabulary-page .word-card,
+html.dark-mode .vocabulary-page .empty-vocabulary,
+html.dark-mode .grammar-page .grammar-menu,
+html.dark-mode .grammar-page .grammar-content,
+html.dark-mode .grammar-page .example-box,
+html.dark-mode .grammar-page .grammar-parts {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+  border-color: #343b47 !important;
+}
+
+/* KARTU KANA */
+
+html.dark-mode .hiragana-page .kana-card,
+html.dark-mode .katakana-page .kana-card {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+  border-color: #343b47 !important;
+}
+
+/* TEKS ABU-ABU */
+
+html.dark-mode .hiragana-page p,
+html.dark-mode .katakana-page p,
+html.dark-mode .kanji-page p,
+html.dark-mode .vocabulary-page p,
+html.dark-mode .grammar-page p {
+  color: #b7bec8 !important;
+}
+
+html.dark-mode .hiragana-page .kana-card span,
+html.dark-mode .katakana-page .kana-card span,
+html.dark-mode .kanji-page .kanji-card span,
+html.dark-mode .kanji-page .kanji-info > span,
+html.dark-mode .vocabulary-page .vocabulary-count,
+html.dark-mode .grammar-page .pattern-box span,
+html.dark-mode .grammar-page .example-box span {
+  color: #9da6b2 !important;
+}
+
+/* SEARCH */
+
+html.dark-mode .vocabulary-page .search-box input {
+  background: transparent !important;
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .vocabulary-page .search-box input::placeholder {
+  color: #7f8895 !important;
+}
+
+/* CATEGORY VOCABULARY */
+
+html.dark-mode .vocabulary-page .category {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .vocabulary-page .category.active {
+  background: #c62828 !important;
+  color: white !important;
+  border-color: #c62828 !important;
+}
+
+/* READING VOCABULARY */
+
+html.dark-mode .vocabulary-page .reading {
+  color: #ff7b7b !important;
+}
+
+html.dark-mode .vocabulary-page .word-category {
+  background: #2a1b1d !important;
+  color: #ff8a8a !important;
+}
+
+/* KANJI DETAIL */
+
+html.dark-mode .kanji-page .detail-content button {
+  background: #f4f6f8 !important;
+  color: #1f2937 !important;
+}
+
+/* KANA / KANJI CHARACTER */
+
+html.dark-mode .hiragana-page .selected-character,
+html.dark-mode .katakana-page .selected-character,
+html.dark-mode .kanji-page .detail-kanji {
+  background: #2a1b1d !important;
+  color: #ff7b7b !important;
+}
+
+/* GRAMMAR MENU */
+
+html.dark-mode .grammar-page .grammar-menu-item {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .grammar-page .grammar-menu-item span {
+  background: #303744 !important;
+  color: #d9dee5 !important;
+}
+
+html.dark-mode .grammar-page .grammar-menu-item.active {
+  background: #2a1b1d !important;
+  color: #ff7b7b !important;
+}
+
+html.dark-mode .grammar-page .grammar-menu-item.active span {
+  background: #c62828 !important;
+  color: white !important;
+}
+
+/* GRAMMAR PATTERN */
+
+html.dark-mode .grammar-page .pattern-box {
+  background: #202630 !important;
+  border-left-color: #c62828 !important;
+}
+
+html.dark-mode .grammar-page .grammar-explanation {
+  background: #202630 !important;
+  border-color: #343b47 !important;
+}
+
+html.dark-mode .grammar-page .grammar-parts {
+  background: #1b2029 !important;
+}
+
+html.dark-mode .grammar-page .grammar-part {
+  border-bottom-color: #343b47 !important;
+}
+
+html.dark-mode .grammar-page .grammar-symbol {
+  background: #2a1b1d !important;
+  color: #ff7b7b !important;
+}
+
+/* GRAMMAR SPEAKER */
+
+html.dark-mode .grammar-page .speak-button {
+  background: #202630 !important;
+  color: #f4f6f8 !important;
+  border-color: #343b47 !important;
+}
+
+/* CATATAN GRAMMAR */
+
+html.dark-mode .grammar-page .grammar-tip {
+  background: #2d291d !important;
+  color: #f4f6f8 !important;
+}
+
+/* STUDY TIMER */
+
+html.dark-mode .vocabulary-page .study-timer-card {
+  background: #1b2029 !important;
+  border-color: #343b47 !important;
+}
+
+html.dark-mode .vocabulary-page .study-timer-card strong {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .vocabulary-page .study-timer-bar {
+  background: #343b47 !important;
+}
+
+/* PRACTICE CARD */
+
+html.dark-mode .hiragana-page .practice-card,
+html.dark-mode .katakana-page .practice-card,
+html.dark-mode .kanji-page .kanji-practice,
+html.dark-mode .vocabulary-page .vocabulary-practice {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .hiragana-page .practice-card button,
+html.dark-mode .katakana-page .practice-card button,
+html.dark-mode .kanji-page .kanji-practice button,
+html.dark-mode .vocabulary-page .vocabulary-practice button {
+  background: #f4f6f8 !important;
+  color: #1f2937 !important;
+}
+
+/* =========================================
+   DARK MODE - LOGIN
+   ========================================= */
+
+html.dark-mode .login-page,
+body.dark-mode .login-page {
+  background: #11151c !important;
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .login-card,
+body.dark-mode .login-card {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+  border: 1px solid #343b47 !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.dark-mode .login-card h1,
+body.dark-mode .login-card h1,
+html.dark-mode .login-card h2,
+body.dark-mode .login-card h2 {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .login-subtitle,
+body.dark-mode .login-subtitle {
+  color: #aeb6c2 !important;
+}
+
+html.dark-mode .login-description,
+body.dark-mode .login-description {
+  color: #c2c8d0 !important;
+}
+
+html.dark-mode .login-card label,
+body.dark-mode .login-card label {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .login-card input,
+body.dark-mode .login-card input {
+  background: #252c36 !important;
+  color: #f4f6f8 !important;
+  border-color: #3a4350 !important;
+}
+
+html.dark-mode .login-card input::placeholder,
+body.dark-mode .login-card input::placeholder {
+  color: #8d96a3 !important;
+}
+
+html.dark-mode .login-card input:focus,
+body.dark-mode .login-card input:focus {
+  outline: none;
+  border-color: #c62828 !important;
+}
+
+html.dark-mode .register-text,
+body.dark-mode .register-text {
+  color: #aeb6c2 !important;
+}
+
+html.dark-mode .register-text span,
+body.dark-mode .register-text span {
+  color: #ff6b6b !important;
+}

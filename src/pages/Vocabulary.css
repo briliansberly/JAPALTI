@@ -1,0 +1,309 @@
+.vocabulary-page {
+  min-height: 100vh;
+  background: #f6f7f9;
+  padding: 40px;
+  color: #1f2937;
+}
+
+.vocabulary-header {
+  max-width: 1050px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vocabulary-header h1 {
+  font-size: 32px;
+  margin: 7px 0;
+}
+
+.vocabulary-header p {
+  color: #888;
+  margin: 0;
+}
+
+.section-label {
+  color: #c62828;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.back-button {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 11px 17px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.vocabulary-container {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.search-box {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box span {
+  font-size: 20px;
+  color: #999;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.category-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.category {
+  background: white;
+  border: 1px solid #eee;
+  padding: 9px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.category.active {
+  background: #c62828;
+  color: white;
+  border-color: #c62828;
+}
+
+.vocabulary-count {
+  color: #999;
+  font-size: 12px;
+  margin: 20px 0 12px;
+}
+
+.vocabulary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.word-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.word-card:hover {
+  border-color: #c62828;
+  transform: translateY(-2px);
+}
+
+.word-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-category {
+  font-size: 9px;
+  color: #c62828;
+  background: #fff0f0;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.speaker {
+  font-size: 15px;
+}
+
+.word-card h2 {
+  font-size: 30px;
+  margin: 22px 0 3px;
+}
+
+.reading {
+  color: #c62828;
+  font-size: 13px;
+  margin: 0;
+}
+
+.meaning {
+  color: #777;
+  font-size: 13px;
+}
+
+.empty-vocabulary {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 15px;
+}
+
+.empty-vocabulary div {
+  font-size: 40px;
+}
+
+.empty-vocabulary h2 {
+  margin-bottom: 5px;
+}
+
+.empty-vocabulary p {
+  color: #999;
+}
+
+.vocabulary-practice {
+  margin-top: 25px;
+  padding: 25px;
+  background: #1f2937;
+  color: white;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vocabulary-practice h2 {
+  margin: 6px 0;
+}
+
+.vocabulary-practice p {
+  color: #bbb;
+  margin: 0;
+  font-size: 13px;
+}
+
+.vocabulary-practice button {
+  border: none;
+  background: white;
+  color: #1f2937;
+  padding: 13px 18px;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .vocabulary-page {
+    padding: 20px;
+  }
+
+  .vocabulary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .vocabulary-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .vocabulary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vocabulary-practice {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .vocabulary-practice button {
+    width: 100%;
+  }
+
+  .study-timer-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .study-timer-card > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .study-timer-card strong {
+    color: #1f2937;
+    font-size: 15px;
+  }
+
+  .study-timer-card span {
+    color: #c62828;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .study-timer-bar {
+    width: 100%;
+    height: 8px;
+    background: #eeeeee;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .study-timer-bar > div {
+    height: 100%;
+    background: #c62828;
+    border-radius: 999px;
+    transition: width 0.3s ease;
+  }
+}
+
+/* =========================
+   SPEAKER BUTTON
+========================= */
+
+.speaker {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 4px 6px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition:
+    transform 0.15s,
+    background 0.2s;
+}
+
+.speaker:hover {
+  background: #fff0f0;
+  transform: scale(1.1);
+}
+
+.speaker:active {
+  transform: scale(0.92);
+}
+
+.speaker.speaking {
+  background: #fff0f0;
+  transform: scale(1.12);
+}
+
+html.dark-mode .speaker:hover,
+body.dark-mode .speaker:hover,
+html.dark-mode .speaker.speaking,
+body.dark-mode .speaker.speaking {
+  background: #292027;
+}

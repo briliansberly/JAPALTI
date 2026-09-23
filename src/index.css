@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+html {
+  background: #f6f7f9;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f7f9;
+}
+
+#root {
+  min-height: 100vh;
+  background: #f6f7f9;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+html.dark-mode,
+html.dark-mode body,
+html.dark-mode #root {
+  background: #11151c;
+  color: #f4f6f8;
+}

@@ -1,0 +1,301 @@
+.katakana-page {
+  min-height: 100vh;
+  background: #f6f7f9;
+  padding: 40px;
+  color: #1f2937;
+}
+
+.katakana-header {
+  max-width: 1050px;
+  margin: 0 auto 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.katakana-header h1 {
+  margin: 6px 0;
+  font-size: 30px;
+}
+
+.katakana-header p {
+  margin: 0;
+  color: #888;
+}
+
+.katakana-page .section-label {
+  color: #c62828;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.katakana-page .back-button {
+  border: 1px solid #ddd;
+  background: white;
+  color: #1f2937;
+  padding: 11px 17px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* SELECTED KANA */
+
+.selected-kana {
+  max-width: 1050px;
+  margin: 0 auto 20px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.selected-character {
+  width: 75px;
+  height: 75px;
+  border-radius: 15px;
+  background: #fff0f0;
+  color: #c62828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.selected-kana span {
+  color: #999;
+  font-size: 11px;
+}
+
+.selected-kana h2 {
+  margin: 3px 0;
+}
+
+.selected-kana p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.selected-kana button {
+  margin-left: auto;
+  border: 1px solid #ddd;
+  background: white;
+  color: #1f2937;
+  padding: 9px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* PANEL */
+
+.katakana-page .kana-panel {
+  max-width: 1050px;
+  margin: auto;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 17px;
+  padding: 28px;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.panel-heading h2 {
+  margin: 5px 0 0;
+  font-size: 21px;
+}
+
+.kana-count {
+  color: #999;
+  font-size: 12px;
+}
+
+/* GRID */
+
+.katakana-page .kana-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.katakana-page .kana-card {
+  border: 1px solid #eee;
+  background: white;
+  color: #1f2937;
+  border-radius: 12px;
+  padding: 17px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.katakana-page .kana-card:hover {
+  border-color: #c62828;
+  transform: translateY(-2px);
+}
+
+.katakana-page .kana-card strong {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.katakana-page .kana-card span {
+  color: #999;
+  font-size: 12px;
+}
+
+/* PRACTICE */
+
+.katakana-page .practice-card {
+  max-width: 1050px;
+  margin: 20px auto 0;
+  padding: 25px;
+  background: #1f2937;
+  color: white;
+  border-radius: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.katakana-page .practice-card h2 {
+  margin: 5px 0;
+}
+
+.katakana-page .practice-card p {
+  color: #bbb;
+  margin: 0;
+  font-size: 13px;
+}
+
+.katakana-page .practice-card .section-label {
+  color: #ff8a8a;
+}
+
+.katakana-page .practice-card button {
+  border: none;
+  background: white;
+  color: #1f2937;
+  padding: 12px 18px;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* DARK MODE */
+
+html.dark-mode .katakana-page,
+body.dark-mode .katakana-page {
+  background: #11151c !important;
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .katakana-page h1,
+html.dark-mode .katakana-page h2,
+html.dark-mode .katakana-page h3,
+body.dark-mode .katakana-page h1,
+body.dark-mode .katakana-page h2,
+body.dark-mode .katakana-page h3 {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .katakana-page p,
+body.dark-mode .katakana-page p {
+  color: #b7bec8 !important;
+}
+
+html.dark-mode .katakana-page .back-button,
+body.dark-mode .katakana-page .back-button {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+  border-color: #343b47 !important;
+}
+
+html.dark-mode .katakana-page .selected-kana,
+html.dark-mode .katakana-page .kana-panel,
+html.dark-mode .katakana-page .kana-card,
+body.dark-mode .katakana-page .selected-kana,
+body.dark-mode .katakana-page .kana-panel,
+body.dark-mode .katakana-page .kana-card {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+  border-color: #343b47 !important;
+}
+
+html.dark-mode .katakana-page .selected-character,
+body.dark-mode .katakana-page .selected-character {
+  background: #2a1b1d !important;
+  color: #ff7b7b !important;
+}
+
+html.dark-mode .katakana-page .selected-kana button,
+body.dark-mode .katakana-page .selected-kana button {
+  background: #252c36 !important;
+  color: #f4f6f8 !important;
+  border-color: #343b47 !important;
+}
+
+html.dark-mode .katakana-page .kana-card span,
+html.dark-mode .katakana-page .kana-count,
+body.dark-mode .katakana-page .kana-card span,
+body.dark-mode .katakana-page .kana-count {
+  color: #9da6b2 !important;
+}
+
+html.dark-mode .katakana-page .practice-card,
+body.dark-mode .katakana-page .practice-card {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+  border: 1px solid #343b47 !important;
+}
+
+html.dark-mode .katakana-page .practice-card button,
+body.dark-mode .katakana-page .practice-card button {
+  background: #f4f6f8 !important;
+  color: #1f2937 !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .katakana-page {
+    padding: 20px;
+  }
+
+  .katakana-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .katakana-header h1 {
+    font-size: 25px;
+  }
+
+  .katakana-page .kana-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .katakana-page .practice-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .katakana-page .practice-card button {
+    width: 100%;
+  }
+
+  .selected-kana {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,549 @@
+.katakana-practice-page {
+  min-height: 100vh;
+  background: #f6f7f9;
+  padding: 40px;
+  color: #1f2937;
+  box-sizing: border-box;
+}
+
+.katakana-practice-page * {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.katakana-practice-header {
+  max-width: 950px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.katakana-practice-label {
+  color: #c62828;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.katakana-practice-header h1 {
+  margin: 6px 0;
+  font-size: 30px;
+}
+
+.katakana-practice-header p {
+  margin: 0;
+  color: #888;
+}
+
+.katakana-practice-back-button {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 11px 17px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* CONTAINER */
+
+.katakana-practice-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* PROGRESS */
+
+.katakana-practice-progress {
+  margin-bottom: 15px;
+}
+
+.katakana-practice-progress > span {
+  font-size: 12px;
+  color: #888;
+}
+
+.katakana-practice-progress-track {
+  height: 6px;
+  background: #e8e8e8;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.katakana-practice-progress-track > div {
+  height: 100%;
+  background: #c62828;
+  transition: width 0.3s;
+}
+
+/* CARD */
+
+.katakana-writing-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* HEADING */
+
+.katakana-writing-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.katakana-writing-heading h2 {
+  margin: 5px 0 0;
+  font-size: 21px;
+}
+
+.katakana-character-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff5f5;
+  border-radius: 12px;
+  padding: 8px 14px;
+}
+
+.katakana-character-info strong {
+  font-size: 28px;
+  color: #c62828;
+}
+
+.katakana-character-info span {
+  color: #888;
+  font-size: 13px;
+}
+
+/* DRAWING AREA */
+
+.katakana-writing-area {
+  position: relative;
+  width: 100%;
+  height: 430px;
+  border: 2px dashed #ddd;
+  border-radius: 16px;
+
+  background: linear-gradient(#f3f3f3 1px, transparent 1px), linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+
+  background-size: 40px 40px;
+  overflow: hidden;
+}
+
+/* GUIDE */
+
+.katakana-guide-character {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 260px;
+  font-weight: bold;
+
+  color: #e7e7e7;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+/* CANVAS */
+
+.katakana-drawing-canvas {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  touch-action: none;
+  cursor: crosshair;
+}
+
+/* HINT */
+
+.katakana-writing-hint {
+  position: absolute;
+
+  left: 50%;
+  bottom: 15px;
+
+  transform: translateX(-50%);
+
+  padding: 7px 12px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  border-radius: 8px;
+
+  color: #999;
+  font-size: 12px;
+
+  pointer-events: none;
+}
+
+/* FEEDBACK */
+
+.katakana-check-feedback {
+  margin-top: 18px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.katakana-check-feedback strong,
+.katakana-check-feedback span {
+  display: block;
+}
+
+.katakana-check-feedback span {
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.katakana-check-feedback.correct {
+  background: #edf7ee;
+  border: 1px solid #c8e6c9;
+  color: #2e7d32;
+}
+
+.katakana-check-feedback.wrong {
+  background: #fff0f0;
+  border: 1px solid #ffcaca;
+  color: #c62828;
+}
+
+/* BUTTONS */
+
+.katakana-writing-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.katakana-clear-button,
+.katakana-check-button,
+.katakana-next-character-button {
+  padding: 13px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.katakana-clear-button {
+  background: white;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.katakana-check-button {
+  background: white;
+  border: 1px solid #c62828;
+  color: #c62828;
+}
+
+.katakana-next-character-button {
+  background: #c62828;
+  border: 1px solid #c62828;
+  color: white;
+}
+
+.katakana-clear-button:hover {
+  background: #f8f8f8;
+}
+
+.katakana-check-button:hover {
+  background: #fff5f5;
+}
+
+.katakana-next-character-button:hover:not(:disabled) {
+  background: #a91f1f;
+}
+
+.katakana-next-character-button:disabled {
+  background: #d6d6d6;
+  border-color: #d6d6d6;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .katakana-practice-page {
+    padding: 20px;
+  }
+
+  .katakana-practice-header {
+    align-items: flex-start;
+  }
+
+  .katakana-practice-header h1 {
+    font-size: 24px;
+  }
+
+  .katakana-writing-card {
+    padding: 20px;
+  }
+
+  .katakana-writing-heading {
+    align-items: flex-start;
+  }
+
+  .katakana-writing-area {
+    height: 350px;
+  }
+
+  .katakana-guide-character {
+    font-size: 210px;
+  }
+
+  .katakana-writing-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .katakana-practice-back-button {
+    flex-shrink: 0;
+  }
+}
+/* =====================================================
+   KATAKANA PRACTICE - DARK MODE
+===================================================== */
+/* =====================================================
+   KATAKANA PRACTICE - DARK MODE
+===================================================== */
+
+html.dark-mode .katakana-practice-page,
+body.dark-mode .katakana-practice-page {
+  background: #11151c !important;
+  color: #f4f6f8 !important;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+html.dark-mode .katakana-practice-header h1,
+body.dark-mode .katakana-practice-header h1 {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .katakana-practice-header p,
+body.dark-mode .katakana-practice-header p {
+  color: #aeb6c2 !important;
+}
+
+html.dark-mode .katakana-practice-label,
+body.dark-mode .katakana-practice-label {
+  color: #ff6b6b !important;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+html.dark-mode .katakana-practice-back-button,
+body.dark-mode .katakana-practice-back-button {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+  border-color: #343b47 !important;
+}
+
+html.dark-mode .katakana-practice-back-button:hover,
+body.dark-mode .katakana-practice-back-button:hover {
+  background: #252c36 !important;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+html.dark-mode .katakana-practice-progress > span,
+body.dark-mode .katakana-practice-progress > span {
+  color: #aeb6c2 !important;
+}
+
+html.dark-mode .katakana-practice-progress-track,
+body.dark-mode .katakana-practice-progress-track {
+  background: #303640 !important;
+}
+
+html.dark-mode .katakana-practice-progress-track > div,
+body.dark-mode .katakana-practice-progress-track > div {
+  background: #c62828 !important;
+}
+
+/* =========================
+   MAIN CARD
+========================= */
+
+html.dark-mode .katakana-writing-card,
+body.dark-mode .katakana-writing-card {
+  background: #1b2029 !important;
+  border-color: #343b47 !important;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+html.dark-mode .katakana-writing-heading h2,
+body.dark-mode .katakana-writing-heading h2 {
+  color: #f4f6f8 !important;
+}
+
+/* =========================
+   CHARACTER INFO
+========================= */
+
+html.dark-mode .katakana-character-info,
+body.dark-mode .katakana-character-info {
+  background: #292027 !important;
+}
+
+html.dark-mode .katakana-character-info strong,
+body.dark-mode .katakana-character-info strong {
+  color: #ff6b6b !important;
+}
+
+html.dark-mode .katakana-character-info span,
+body.dark-mode .katakana-character-info span {
+  color: #aeb6c2 !important;
+}
+
+/* =========================
+   DRAWING AREA
+========================= */
+
+html.dark-mode .katakana-writing-area,
+body.dark-mode .katakana-writing-area {
+  background-color: #171c23 !important;
+
+  background-image: linear-gradient(#252b34 1px, transparent 1px), linear-gradient(90deg, #252b34 1px, transparent 1px) !important;
+
+  border-color: #3a424d !important;
+}
+
+/* =========================
+   GUIDE CHARACTER
+========================= */
+
+html.dark-mode .katakana-guide-character,
+body.dark-mode .katakana-guide-character {
+  color: #414954 !important;
+}
+
+/* =========================
+   HINT
+========================= */
+
+html.dark-mode .katakana-writing-hint,
+body.dark-mode .katakana-writing-hint {
+  background: rgba(27, 32, 41, 0.94) !important;
+  color: #9da6b2 !important;
+}
+
+/* =========================
+   HAPUS BUTTON
+========================= */
+
+html.dark-mode .katakana-clear-button,
+body.dark-mode .katakana-clear-button {
+  background: #1b2029 !important;
+  color: #f4f6f8 !important;
+  border-color: #3a424d !important;
+}
+
+html.dark-mode .katakana-clear-button:hover,
+body.dark-mode .katakana-clear-button:hover {
+  background: #252c36 !important;
+}
+
+/* =========================
+   CEK BUTTON
+========================= */
+
+html.dark-mode .katakana-check-button,
+body.dark-mode .katakana-check-button {
+  background: #1b2029 !important;
+  border-color: #ff6b6b !important;
+  color: #ff6b6b !important;
+}
+
+html.dark-mode .katakana-check-button:hover,
+body.dark-mode .katakana-check-button:hover {
+  background: #292027 !important;
+}
+
+/* =========================
+   NEXT BUTTON
+========================= */
+
+html.dark-mode .katakana-next-character-button,
+body.dark-mode .katakana-next-character-button {
+  background: #c62828 !important;
+  border-color: #c62828 !important;
+  color: white !important;
+}
+
+html.dark-mode .katakana-next-character-button:hover:not(:disabled),
+body.dark-mode .katakana-next-character-button:hover:not(:disabled) {
+  background: #a91f1f !important;
+}
+
+/* =========================
+   NEXT DISABLED
+========================= */
+
+html.dark-mode .katakana-next-character-button:disabled,
+body.dark-mode .katakana-next-character-button:disabled {
+  background: #343a43 !important;
+  border-color: #343a43 !important;
+  color: #777f8b !important;
+}
+
+/* =========================
+   FEEDBACK BENAR
+========================= */
+
+html.dark-mode .katakana-check-feedback.correct,
+body.dark-mode .katakana-check-feedback.correct {
+  background: #17271c !important;
+  border-color: #285c35 !important;
+  color: #6ee78a !important;
+}
+
+/* =========================
+   FEEDBACK SALAH
+========================= */
+
+html.dark-mode .katakana-check-feedback.wrong,
+body.dark-mode .katakana-check-feedback.wrong {
+  background: #30191d !important;
+  border-color: #713139 !important;
+  color: #ff7b7b !important;
+}
+
+/* =========================
+   MOBILE DARK MODE
+========================= */
+
+@media (max-width: 650px) {
+  html.dark-mode .katakana-practice-page,
+  body.dark-mode .katakana-practice-page {
+    background: #11151c !important;
+  }
+
+  html.dark-mode .katakana-writing-card,
+  body.dark-mode .katakana-writing-card {
+    background: #1b2029 !important;
+  }
+}

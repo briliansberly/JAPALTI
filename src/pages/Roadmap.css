@@ -1,0 +1,678 @@
+.roadmap-page {
+  min-height: 100vh;
+  background: #f6f7f9;
+  color: #1f2937;
+  display: flex;
+}
+
+.roadmap-sidebar {
+  width: 230px;
+  min-height: 100vh;
+  background: white;
+  border-right: 1px solid #eee;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.roadmap-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 10px 30px;
+}
+
+.roadmap-brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #c62828;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.roadmap-brand h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.roadmap-brand span {
+  color: #999;
+  font-size: 10px;
+}
+
+.roadmap-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.roadmap-sidebar-menu button,
+.roadmap-sidebar-bottom button {
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 12px;
+  border-radius: 9px;
+  color: #777;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.roadmap-sidebar-menu button:hover,
+.roadmap-sidebar-bottom button:hover {
+  background: #f6f6f6;
+  color: #333;
+}
+
+.roadmap-sidebar-menu button.active {
+  background: #fff0f0;
+  color: #c62828;
+  font-weight: bold;
+}
+
+.roadmap-sidebar-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.roadmap-main {
+  flex: 1;
+  min-width: 0;
+  padding: 45px 50px 70px;
+  overflow: hidden;
+}
+
+.roadmap-header {
+  max-width: 950px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roadmap-label {
+  color: #c62828;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.roadmap-header h1 {
+  margin: 7px 0 3px;
+  font-size: 30px;
+}
+
+.roadmap-header p {
+  margin: 0;
+  color: #888;
+}
+
+.roadmap-progress-box {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px 18px;
+  text-align: center;
+}
+
+.roadmap-progress-box span {
+  display: block;
+  color: #999;
+  font-size: 11px;
+}
+
+.roadmap-progress-box strong {
+  display: block;
+  margin-top: 3px;
+  color: #c62828;
+  font-size: 20px;
+}
+
+.roadmap-section {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.roadmap-section-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.roadmap-line {
+  height: 1px;
+  background: #ddd;
+  flex: 1;
+}
+
+.roadmap-level-badge {
+  border: 1px solid #c62828;
+  color: #c62828;
+  border-radius: 20px;
+  padding: 7px 16px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.roadmap-section-subtitle {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  margin: 10px 0 20px;
+}
+
+.roadmap-track {
+  height: 1250px;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.roadmap-path {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.roadmap-path svg {
+  width: 100%;
+  height: 100%;
+}
+
+.roadmap-path path {
+  fill: none;
+  stroke: #c62828;
+  stroke-width: 3;
+  stroke-dasharray: 8 8;
+  opacity: 0.7;
+}
+
+.roadmap-node-wrapper {
+  position: absolute;
+  width: 180px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.node-0 {
+  left: 50%;
+  top: 6%;
+}
+
+.node-1 {
+  left: 78%;
+  top: 21%;
+}
+
+.node-2 {
+  left: 22%;
+  top: 37%;
+}
+
+.node-3 {
+  left: 78%;
+  top: 51%;
+}
+
+.node-4 {
+  left: 22%;
+  top: 65%;
+}
+
+.node-5 {
+  left: 78%;
+  top: 77%;
+}
+
+.node-6 {
+  left: 22%;
+  top: 87%;
+}
+
+.node-7 {
+  left: 78%;
+  top: 93%;
+}
+
+.node-8 {
+  left: 35%;
+  top: 98%;
+}
+
+.node-9 {
+  left: 65%;
+  top: 99%;
+}
+
+.roadmap-node {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+
+  /* BELUM SELESAI = PUTIH */
+  background: white;
+  color: #c62828;
+
+  border: 3px solid #d1d5db;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  cursor: pointer;
+  transition: 0.2s;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* HOVER */
+.roadmap-node:hover:not(:disabled) {
+  transform: scale(1.08);
+  border-color: #c62828;
+}
+
+/* SUDAH SELESAI = MERAH */
+.roadmap-node-wrapper.completed .roadmap-node {
+  background: #c62828;
+  color: white;
+  border-color: #c62828;
+
+  box-shadow: 0 6px 20px rgba(198, 40, 40, 0.25);
+}
+
+/* TERKUNCI = ABU */
+.roadmap-node-wrapper.locked .roadmap-node {
+  background: #e5e7eb;
+  color: #9ca3af;
+  border-color: #d1d5db;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+}
+
+/* ICON */
+.node-icon {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+/* ICON SELESAI TETAP ICON ASLINYA */
+.roadmap-node-wrapper.completed .node-icon {
+  color: white;
+}
+
+/* NEXT UP */
+.roadmap-node-wrapper.next .roadmap-node {
+  box-shadow:
+    0 0 0 7px rgba(198, 40, 40, 0.1),
+    0 8px 25px rgba(198, 40, 40, 0.25);
+}
+
+.next-badge {
+  display: inline-block;
+  background: #c62828;
+  color: white;
+  padding: 5px 11px;
+  border-radius: 12px;
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.roadmap-node-info {
+  margin-top: 9px;
+}
+
+.roadmap-node-info strong {
+  display: block;
+  font-size: 12px;
+}
+
+.roadmap-node-info span {
+  display: block;
+  color: #999;
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.roadmap-node-info small {
+  display: block;
+  color: #c62828;
+  font-size: 9px;
+  margin-top: 4px;
+}
+
+.next-level-card {
+  max-width: 950px;
+  margin: 10px auto 0;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.next-level-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  background: #f0f1f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+.next-level-card h2 {
+  margin: 4px 0;
+}
+
+.next-level-card p {
+  margin: 0;
+  color: #888;
+  font-size: 12px;
+}
+
+.next-level-card button {
+  margin-left: auto;
+  border: none;
+  background: #c62828;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next-level-card button:disabled {
+  background: #ddd;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.next-level-card.unlocked .next-level-icon {
+  background: #fff0f0;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+  .roadmap-sidebar {
+    display: none;
+  }
+
+  .roadmap-main {
+    padding: 25px 15px 50px;
+  }
+
+  .roadmap-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .roadmap-header h1 {
+    font-size: 25px;
+  }
+
+  .roadmap-track {
+    height: 1150px;
+  }
+
+  .roadmap-node-wrapper {
+    width: 135px;
+  }
+
+  .roadmap-node {
+    width: 62px;
+    height: 62px;
+  }
+
+  .node-icon {
+    font-size: 22px;
+  }
+
+  .roadmap-node-info strong {
+    font-size: 10px;
+  }
+
+  .roadmap-node-info span,
+  .roadmap-node-info small {
+    font-size: 8px;
+  }
+
+  .next-level-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .next-level-card button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* =========================================================
+   DARK MODE - ROADMAP
+========================================================= */
+
+html.dark-mode .roadmap-page,
+body.dark-mode .roadmap-page {
+  background: #11151c !important;
+  color: #f4f6f8 !important;
+}
+
+/* SIDEBAR */
+
+html.dark-mode .roadmap-sidebar,
+body.dark-mode .roadmap-sidebar {
+  background: #1b2029 !important;
+  border-right-color: #343b47 !important;
+}
+
+html.dark-mode .roadmap-brand h2,
+body.dark-mode .roadmap-brand h2 {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .roadmap-brand span,
+body.dark-mode .roadmap-brand span {
+  color: #8f98a6 !important;
+}
+
+html.dark-mode .roadmap-sidebar-menu button,
+body.dark-mode .roadmap-sidebar-menu button,
+html.dark-mode .roadmap-sidebar-bottom button,
+body.dark-mode .roadmap-sidebar-bottom button {
+  color: #aeb6c2 !important;
+}
+
+html.dark-mode .roadmap-sidebar-menu button:hover,
+body.dark-mode .roadmap-sidebar-menu button:hover,
+html.dark-mode .roadmap-sidebar-bottom button:hover,
+body.dark-mode .roadmap-sidebar-bottom button:hover {
+  background: #252c36 !important;
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .roadmap-sidebar-menu button.active,
+body.dark-mode .roadmap-sidebar-menu button.active {
+  background: #3a2023 !important;
+  color: #ff6b6b !important;
+}
+
+/* HEADER */
+
+html.dark-mode .roadmap-header h1,
+body.dark-mode .roadmap-header h1 {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .roadmap-header p,
+body.dark-mode .roadmap-header p {
+  color: #9ca5b2 !important;
+}
+
+html.dark-mode .roadmap-label,
+body.dark-mode .roadmap-label {
+  color: #ff6b6b !important;
+}
+
+/* PROGRESS */
+
+html.dark-mode .roadmap-progress-box,
+body.dark-mode .roadmap-progress-box {
+  background: #1b2029 !important;
+  border-color: #343b47 !important;
+}
+
+html.dark-mode .roadmap-progress-box span,
+body.dark-mode .roadmap-progress-box span {
+  color: #9ca5b2 !important;
+}
+
+html.dark-mode .roadmap-progress-box strong,
+body.dark-mode .roadmap-progress-box strong {
+  color: #ff6b6b !important;
+}
+
+/* LEVEL */
+
+html.dark-mode .roadmap-line,
+body.dark-mode .roadmap-line {
+  background: #343b47 !important;
+}
+
+html.dark-mode .roadmap-level-badge,
+body.dark-mode .roadmap-level-badge {
+  border-color: #c62828 !important;
+  color: #ff6b6b !important;
+}
+
+html.dark-mode .roadmap-section-subtitle,
+body.dark-mode .roadmap-section-subtitle {
+  color: #8f98a6 !important;
+}
+
+/* ROADMAP PATH */
+
+html.dark-mode .roadmap-path path,
+body.dark-mode .roadmap-path path {
+  stroke: #e05252 !important;
+}
+
+/* NODE YANG BELUM SELESAI */
+/* Tetap putih sesuai desain lu */
+
+html.dark-mode .roadmap-node,
+body.dark-mode .roadmap-node {
+  background: #ffffff !important;
+  color: #c62828 !important;
+  border-color: #555e6b !important;
+}
+
+/* Hover node */
+
+html.dark-mode .roadmap-node:hover:not(:disabled),
+body.dark-mode .roadmap-node:hover:not(:disabled) {
+  border-color: #ff6b6b !important;
+}
+
+/* NODE SELESAI = MERAH */
+
+html.dark-mode .roadmap-node-wrapper.completed .roadmap-node,
+body.dark-mode .roadmap-node-wrapper.completed .roadmap-node {
+  background: #c62828 !important;
+  color: white !important;
+  border-color: #c62828 !important;
+}
+
+/* NODE TERKUNCI */
+
+html.dark-mode .roadmap-node-wrapper.locked .roadmap-node,
+body.dark-mode .roadmap-node-wrapper.locked .roadmap-node {
+  background: #2a3039 !important;
+  color: #737d8a !important;
+  border-color: #3b444f !important;
+}
+
+/* TEXT NODE */
+
+html.dark-mode .roadmap-node-info strong,
+body.dark-mode .roadmap-node-info strong {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .roadmap-node-info span,
+body.dark-mode .roadmap-node-info span {
+  color: #8f98a6 !important;
+}
+
+html.dark-mode .roadmap-node-info small,
+body.dark-mode .roadmap-node-info small {
+  color: #ff6b6b !important;
+}
+
+/* NEXT UP */
+
+html.dark-mode .roadmap-node-wrapper.next .roadmap-node,
+body.dark-mode .roadmap-node-wrapper.next .roadmap-node {
+  box-shadow:
+    0 0 0 7px rgba(198, 40, 40, 0.16),
+    0 8px 25px rgba(198, 40, 40, 0.3) !important;
+}
+
+html.dark-mode .next-badge,
+body.dark-mode .next-badge {
+  background: #c62828 !important;
+  color: white !important;
+}
+
+/* NEXT LEVEL CARD */
+
+html.dark-mode .next-level-card,
+body.dark-mode .next-level-card {
+  background: #1b2029 !important;
+  border-color: #343b47 !important;
+}
+
+html.dark-mode .next-level-card h2,
+body.dark-mode .next-level-card h2 {
+  color: #f4f6f8 !important;
+}
+
+html.dark-mode .next-level-card p,
+body.dark-mode .next-level-card p {
+  color: #9ca5b2 !important;
+}
+
+html.dark-mode .next-level-icon,
+body.dark-mode .next-level-icon {
+  background: #252c36 !important;
+}
+
+html.dark-mode .next-level-card button:disabled,
+body.dark-mode .next-level-card button:disabled {
+  background: #343b47 !important;
+  color: #7f8996 !important;
+}
+
+html.dark-mode .next-level-card.unlocked .next-level-icon,
+body.dark-mode .next-level-card.unlocked .next-level-icon {
+  background: #3a2023 !important;
+}

@@ -1,0 +1,343 @@
+.kanji-practice-page {
+  min-height: 100vh;
+  background: #f6f7f9;
+  padding: 40px;
+  color: #1f2937;
+}
+
+.practice-header {
+  max-width: 950px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.practice-label {
+  color: #c62828;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.practice-header h1 {
+  margin: 6px 0;
+  font-size: 30px;
+}
+
+.practice-header p {
+  margin: 0;
+  color: #888;
+}
+
+.practice-back-button {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 11px 17px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.practice-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.practice-progress {
+  margin-bottom: 15px;
+}
+
+.practice-progress > span {
+  font-size: 12px;
+  color: #888;
+}
+
+.practice-progress-track {
+  height: 6px;
+  background: #e8e8e8;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.practice-progress-track > div {
+  height: 100%;
+  background: #c62828;
+}
+
+.writing-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.writing-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.writing-heading h2 {
+  margin: 5px 0 0;
+}
+
+.character-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff5f5;
+  border-radius: 12px;
+  padding: 8px 14px;
+}
+
+.character-info strong {
+  font-size: 32px;
+  color: #c62828;
+}
+
+.character-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-info span {
+  color: #888;
+  font-size: 12px;
+}
+
+.writing-area {
+  position: relative;
+  width: 100%;
+  height: 430px;
+  border: 2px dashed #ddd;
+  border-radius: 16px;
+  overflow: hidden;
+
+  background-color: white;
+
+  background-image: linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(90deg, #f0f0f0 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+.guide-character {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 260px;
+  font-weight: bold;
+  color: #e4e7eb;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.drawing-canvas {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.writing-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+
+  background: rgba(255, 255, 255, 0.92);
+  padding: 7px 12px;
+  border-radius: 8px;
+
+  color: #999;
+  font-size: 12px;
+
+  pointer-events: none;
+}
+
+.check-feedback {
+  margin-top: 18px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.check-feedback strong,
+.check-feedback span {
+  display: block;
+}
+
+.check-feedback span {
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.correct-feedback {
+  background: #edf7ee;
+  border: 1px solid #b9dfbd;
+  color: #087f23;
+}
+
+.wrong-feedback {
+  background: #fff0f0;
+  border: 1px solid #ffc2c2;
+  color: #d00000;
+}
+
+.writing-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.clear-button,
+.check-button,
+.next-character-button {
+  min-height: 46px;
+  padding: 13px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear-button {
+  background: white;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.check-button {
+  background: white;
+  border: 1px solid #c62828;
+  color: #c62828;
+}
+
+.next-character-button {
+  background: #c62828;
+  border: 1px solid #c62828;
+  color: white;
+}
+
+.next-character-button:disabled {
+  background: #d8d8d8;
+  border-color: #d8d8d8;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* DARK MODE */
+
+html.dark-mode .kanji-practice-page,
+body.dark-mode .kanji-practice-page {
+  background: #11151c;
+  color: #f4f6f8;
+}
+
+html.dark-mode .practice-header p,
+body.dark-mode .practice-header p {
+  color: #aeb6c2;
+}
+
+html.dark-mode .practice-back-button,
+body.dark-mode .practice-back-button {
+  background: #1b2029;
+  color: #f4f6f8;
+  border-color: #343b47;
+}
+
+html.dark-mode .writing-card,
+body.dark-mode .writing-card {
+  background: #1b2029;
+  border-color: #343b47;
+}
+
+html.dark-mode .character-info,
+body.dark-mode .character-info {
+  background: #292027;
+}
+
+html.dark-mode .character-info span,
+body.dark-mode .character-info span {
+  color: #aeb6c2;
+}
+
+html.dark-mode .writing-area,
+body.dark-mode .writing-area {
+  background-color: #171c23;
+  border-color: #3a424d;
+
+  background-image: linear-gradient(#252b34 1px, transparent 1px), linear-gradient(90deg, #252b34 1px, transparent 1px);
+}
+
+html.dark-mode .guide-character,
+body.dark-mode .guide-character {
+  color: #414954;
+}
+
+html.dark-mode .writing-hint,
+body.dark-mode .writing-hint {
+  background: rgba(27, 32, 41, 0.94);
+  color: #9da6b2;
+}
+
+html.dark-mode .clear-button,
+body.dark-mode .clear-button {
+  background: #1b2029;
+  color: #f4f6f8;
+  border-color: #3a424d;
+}
+
+html.dark-mode .check-button,
+body.dark-mode .check-button {
+  background: #1b2029;
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+@media (max-width: 650px) {
+  .kanji-practice-page {
+    padding: 20px;
+  }
+
+  .practice-header {
+    align-items: flex-start;
+  }
+
+  .practice-header h1 {
+    font-size: 24px;
+  }
+
+  .writing-card {
+    padding: 20px;
+  }
+
+  .writing-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .writing-area {
+    height: 350px;
+  }
+
+  .guide-character {
+    font-size: 210px;
+  }
+
+  .writing-actions {
+    grid-template-columns: 1fr;
+  }
+}

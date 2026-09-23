@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>JAPALTI</title>
+
+    <!-- Aktifkan dark mode SEBELUM React tampil -->
+    <script>
+      (function () {
+        const darkMode = localStorage.getItem('japalti_dark_mode') === 'true';
+
+        if (darkMode) {
+          document.documentElement.classList.add('dark-mode');
+        }
+      })();
+    </script>
+
+    <style>
+      html,
+      body,
+      #root {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      html {
+        background: #f6f7f9;
+      }
+
+      body {
+        background: #f6f7f9;
+      }
+
+      #root {
+        background: #f6f7f9;
+      }
+
+      html.dark-mode {
+        background: #11151c !important;
+        color-scheme: dark;
+      }
+
+      html.dark-mode body {
+        background: #11151c !important;
+      }
+
+      html.dark-mode #root {
+        background: #11151c !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script
+      type="module"
+      src="/src/main.jsx"
+    ></script>
+  </body>
+</html>
